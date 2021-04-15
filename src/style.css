@@ -1,0 +1,52 @@
+:root {
+    --container-width: 500px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0;
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    background-color: orangered;
+    cursor: pointer;
+
+}
+
+.container {
+    padding-right: calc(50% - var(--container-width) / 2) !important;
+    padding-left: calc(50% - var(--container-width) / 2) !important;
+}
+
+.visuallyHidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.main__form {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    border-radius: 3px;
+}
+
+.main__input {
+    border: none;
+    border-radius: 3px;
+}
